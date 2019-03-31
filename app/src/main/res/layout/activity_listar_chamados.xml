@@ -7,16 +7,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.usjt.deswebmob.servicedesk.MainActivity">
-    <EditText
-        android:id="@+id/busca_fila"
-        android:layout_width="0dp"
+    tools:context="br.usjt.deswebmob.servicedesk.ListarChamadosActivity">
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/busca_fila"
-        android:layout_weight="1" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/botao_busca"
-        android:onClick="buscarChamados"/>
+        android:fastScrollEnabled="true">
+    </ListView>
 </LinearLayout>
